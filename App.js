@@ -4,11 +4,11 @@ import { createStackNavigator } from '@react-navigation/stack';
 import React from 'react';
 import LogIn from './src/vistas/LogIn';
 import SignIn from './src/vistas/SignIn';
-import HomeScreen from './src/vistas/prueba';
-import Creditos from './src/vistas/prueba';
+import HomeScreen from './src/vistas/Creditos';
+import Creditos from './src/vistas/Creditos';
 import prueba2 from './src/vistas/Perfil';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
-import { BottomTab } from './src/navigation/BottomTab';
+import { BottomTab } from './src/BottomTab';
 // import Icon from 'react-native-vector-icons/MaterialIcons';
 
 
@@ -75,13 +75,13 @@ export default function App() {
   return (
     // <FavoritesProvider>
       <NavigationContainer>
-        <Stack.Navigator initialRouteName="Inicio" screenOptions={{ headerShown: false }}>
+        <Stack.Navigator initialRouteName="Creditos" screenOptions={{ headerShown: false }}>
           <Stack.Screen name="LogIn" component={LogIn} />
           <Stack.Screen name="SignIn" component={SignIn} />
           <Stack.Screen name="Inicio" component={HomeScreen} />
           <Stack.Screen name="Prueba" component={prueba2} />
           <Stack.Screen name="Creditos" component={Creditos} />
-          {/* <Stack.Screen name="BottomTab" component={BottomTab} /> */}
+          <Stack.Screen name="BottomTab" component={BottomTab} />
 
           {/* <Stack.Screen name="Perfil" component={Perfil} /> */}
           {/* <Stack.Screen name="FavoritesScreen" component={FavoritesScreen} />

@@ -5,7 +5,7 @@ import Boton from './Boton';
 
 export default function Enlaces({navigation}) {
   
-const poster = {uri: 'https://ar.pinterest.com/pin/15903404929270300/'}
+// const poster = {uri: }
 
     return (
       <SafeAreaProvider>

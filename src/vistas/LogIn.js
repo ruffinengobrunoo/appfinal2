@@ -8,15 +8,15 @@ import { SafeAreaView, SafeAreaProvider } from 'react-native-safe-area-context'
 
 
 import Boton from '../componentes/Boton'
-
-
+import HomeScreen from "./HomeScreen";
 
 
 export default function LogIn({ navigation }) {
 
-// const navigation = useNavigation();
 
-// const Stack = createNativeStackNavigator();
+  // const navigation = useNavigation();
+
+  // const Stack = createNativeStackNavigator();
   // const [nombre, setNombre] = useState('');
   // const [apellido, setApellido] = useState('');
   // const [email, setEmail] = useState('');
@@ -56,15 +56,15 @@ export default function LogIn({ navigation }) {
           />
           <Boton
             text="Iniciar sesión"
-            press={() => navigation.navigate('')}
+            press={() => navigation.navigate()}
           />
         </View>
 
         <View style={styles.botones}>
-          
-            <Text style={styles.upper}>¿No tenés una cuenta? </Text>
-            <Text style={styles.texto} onPress={() => navigation.navigate('')}>Creala acá</Text>
-          
+
+          <Text style={styles.upper}>¿No tenés una cuenta? </Text>
+          <Text style={styles.texto} onPress={() => navigation.navigate("HomeScreen")}>Creala acá</Text>
+
         </View>
 
       </SafeAreaView>
@@ -82,11 +82,12 @@ const styles = StyleSheet.create({
     // justifyContent:'space-evenly',
     alignSelf: 'center',
     alignItems: 'center',
+    alignContent: 'center',
     backgroundColor: '#000',
     paddingHorizontal: 40,
     paddingVertical: 10
   },
-  titulos:{
+  titulos: {
     flex: 1,
     // backgroundColor: 'green',
     alignSelf: 'flex-start',
@@ -98,7 +99,7 @@ const styles = StyleSheet.create({
     alignSelf: 'flex-end',
     paddingVertical: 'auto'
   },
-  botones:{
+  botones: {
     flex: 1,
     // backgroundColor: 'green',
     alignSelf: 'flex-start',

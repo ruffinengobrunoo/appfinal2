@@ -3,11 +3,11 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import React from "react";
 import { Text } from 'react-native';
 
-import HomeScreen from "../vistas/prueba";
-import LogIn from "../vistas/LogIn";
-import SignIn from "../vistas/SignIn";
-import prueba2 from "../vistas/Perfil";
-import Creditos from "../vistas/prueba";
+import HomeScreen from './vistas/HomeScreen'
+import LogIn from "./vistas/LogIn";
+import SignIn from "./vistas/SignIn";
+import prueba2 from "./vistas/Perfil";
+import Creditos from "./vistas/Creditos";
 
 import Icon from 'react-native-vector-icons/Ionicons'; 
 
